@@ -65,9 +65,7 @@ const editTask = function () {
 };
 
 const deleteTask = function () {
-  const taskItem = this.parentNode;
-  const list = taskItem.parentNode;
-  list.removeChild(taskItem);
+  this.parentNode.remove();
 };
 
 const toggleTask = function (event) {
